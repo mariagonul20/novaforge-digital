@@ -1,0 +1,68 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    //Header 
+    &_header {
+        padding: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+        max-width: $max-width;
+        margin: 0 auto !important;
+    }
+
+    //logo
+    &_logo a {
+       font-size: 1.25rem;
+       font-weight: 800;
+       color: $white;
+       white-space: nowrap;
+    }
+
+    .logo_span {
+        display: none;
+    }
+
+    //menu btn
+    &_menu-btn {
+        font-size: 1.5rem;
+        color: $white;
+        cursor: pointer;
+    }
+
+    //Links
+    &_links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        background-color: $primary-color;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: all 0.5s ease;
+
+    }
+
+    &_open {
+        transform: translateY(100%);
+        
+    }
+     a{
+        font-size: 1rem;
+        font-weight: 500;
+        color: $white;
+     }
+}
+
+ &_btns {
+    display: none;
+    white-space: nowrap;
+  }
